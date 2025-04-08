@@ -19,4 +19,4 @@ Here are some ideas to get you started:
 [![StarryCode-Lang's GitHub stats](https://github-readme-stats.vercel.app/api?username=StarryCode-Lang&hide=stars,contribs&show_icons=true&theme=nightowl)](https://github.com/anuraghazra/github-readme-stats)
 
 <!--WakaTime Stats Card-->
-[![StarryCode-Lang's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=StarryCode-Lang)](https://github.com/anuraghazra/github-readme-stats)
+[![StarryCode-Lang's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=StarryFan)](https://github.com/anuraghazra/github-readme-stats)
