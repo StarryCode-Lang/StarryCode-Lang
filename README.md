@@ -27,8 +27,6 @@ Here are some ideas to get you started:
 ![Code Time](http://img.shields.io/badge/Code%20Time-3%20hrs%2015%20mins-blue)
 
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-0-blue)  
-![visitors](https://visitor-badge.glitch.me/badge?page_id=StarryCode-Lang&left_color=green&right_color=red)
-
 
 **🐱 My GitHub Data** 
 
