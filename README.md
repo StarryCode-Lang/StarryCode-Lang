@@ -23,6 +23,13 @@ Here are some ideas to get you started:
 <!--奖杯-->
 [![trophy](https://github-profile-trophy.vercel.app/?username=StarryCode-Lang&row=1&margin-w=10&theme=dark_lover)](https://github.com/ryo-ma/github-profile-trophy)
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/StarryCode-Lang/StarryCode-Lang/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/StarryCode-Lang/StarryCode-Lang/output/github-contribution-grid-snake.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/StarryCode-Lang/StarryCode-Lang/output/github-contribution-grid-snake.svg">
+</picture>
+
+
 <!--START_SECTION:waka-->
 ![Code Time](http://img.shields.io/badge/Code%20Time-3%20hrs%2015%20mins-blue)
 
