@@ -17,3 +17,6 @@ Here are some ideas to get you started:
 
 <!--GitHub 统计卡片-->
 [![StarryCode-Lang's GitHub stats](https://github-readme-stats.vercel.app/api?username=StarryCode-Lang&hide=stars,contribs&show_icons=true&theme=nightowl)](https://github.com/anuraghazra/github-readme-stats)
+
+<!--WakaTime Stats Card-->
+[![StarryCode-Lang's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=StarryCode-Lang)](https://github.com/anuraghazra/github-readme-stats)
