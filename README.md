@@ -20,6 +20,9 @@ Here are some ideas to get you started:
 <!--GitHub 统计卡片-->
 [![StarryCode-Lang's GitHub stats](https://github-readme-stats.vercel.app/api?username=StarryCode-Lang&hide=stars,contribs&show_icons=true&theme=nightowl)](https://github.com/anuraghazra/github-readme-stats)
 
+<!--奖杯-->
+[![trophy](https://github-profile-trophy.vercel.app/?username=StarryCode-Lang&row=1&margin-w=10&theme=dark_lover)](https://github.com/ryo-ma/github-profile-trophy)
+
 <!--START_SECTION:waka-->
 ![Code Time](http://img.shields.io/badge/Code%20Time-3%20hrs%2015%20mins-blue)
 
