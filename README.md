@@ -89,6 +89,3 @@ C                        1 repo              ███░░░░░░░░�
 
  Last Updated on 08/04/2025 08:20:36 UTC
 <!--END_SECTION:waka-->
-
-<!--WakaTime Stats Card-->
-[![StarryCode-Lang's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=StarryFan)](https://github.com/anuraghazra/github-readme-stats)
