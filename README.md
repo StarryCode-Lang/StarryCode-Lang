@@ -15,4 +15,4 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-[![StarryCode-Lang's GitHub stats](https://github-readme-stats.vercel.app/api?username=StarryCode-Lang&show_icons=true)](https://github.com/anuraghazra/github-readme-stats)
+[![StarryCode-Lang's GitHub stats](https://github-readme-stats.vercel.app/api?username=StarryCode-Lang&show_icons=true&theme=nightowl)](https://github.com/anuraghazra/github-readme-stats)
