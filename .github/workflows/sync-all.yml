@@ -1,8 +1,8 @@
-name: Sync All GitHub Repos to Gitee
+name: Sync GitHub repos to Gitee
 
 on:
   schedule:
-    - cron: '0 */6 * * *'  # 每6小时同步一次
+    - cron: '0 */6 * * *'  # 每6小时自动执行一次，你可以根据需要调整
   workflow_dispatch:       # 允许手动触发
 
 jobs:
@@ -10,13 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout this repo (for repos.txt)
         uses: actions/checkout@v3
-
-      - name: Setup Git identity
-        run: |
-          git config --global user.name "StarrySyncBot"
-          git config --global user.email "2572264708@qq.com"
 
       - name: Setup SSH for Gitee
         run: |
@@ -25,22 +20,34 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan gitee.com >> ~/.ssh/known_hosts
 
-      - name: Start syncing...
+      - name: Sync repos from repos.txt
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
-          while read repo; do
+          while read -r repo; do
             echo "🔄 Syncing $repo ..."
-          
+
             rm -rf "$repo.git"
-            git clone --bare "https://ghp_${{ secrets.GH_PAT }}@github.com/StarryCode-Lang/$repo.git" "$repo.git"
-          
+
+            # 克隆裸仓库，使用 PAT 认证
+            git clone --bare "https://ghp_${GH_PAT}@github.com/StarryCode-Lang/${repo}.git" "$repo.git"
             if [ ! -d "$repo.git" ]; then
               echo "❌ Clone failed for $repo"
               continue
             fi
-          
-            cd "$repo.git"
-            git remote add gitee "git@gitee.com:fan-ruibo/$repo.git" || git remote set-url gitee "git@gitee.com:fan-ruibo/$repo.git"
-            git push --mirror gitee
-            cd ..
-          done < repos.txt
 
+            cd "$repo.git"
+
+            # 添加或更新 gitee 远程仓库（SSH）
+            if git remote | grep -q '^gitee$'; then
+              git remote set-url gitee "git@gitee.com:fan-ruibo/${repo}.git"
+            else
+              git remote add gitee "git@gitee.com:fan-ruibo/${repo}.git"
+            fi
+
+            # 推送镜像
+            git push --mirror gitee || echo "⚠️ Push to Gitee failed for $repo"
+
+            cd ..
+
+          done < repos.txt
