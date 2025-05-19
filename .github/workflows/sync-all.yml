@@ -16,7 +16,7 @@ jobs:
       - name: Setup SSH for Gitee (debug)
         run: |
           mkdir -p ~/.ssh
-          echo "${{ secrets.GITEE_PRIVATE_KEY_BASE64 }}" | base64 -d > ~/.ssh/id_rsa
+          echo "${{ secrets.GITEE_PRIVATE_KEY }}" | base64 -d > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
       
           echo "=== Private key head ==="
