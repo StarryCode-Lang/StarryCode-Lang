@@ -1,0 +1,38 @@
+name: Sync All GitHub Repos to Gitee
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # 每6小时同步一次
+  workflow_dispatch:       # 允许手动触发
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Git identity
+        run: |
+          git config --global user.name "StarrySyncBot"
+          git config --global user.email "2572264708@qq.com"
+
+      - name: Setup SSH for Gitee
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.GITEE_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan gitee.com >> ~/.ssh/known_hosts
+
+      - name: Start syncing...
+        run: |
+          while read repo; do
+            echo "🔄 Syncing $repo ..."
+            rm -rf "$repo"
+            git clone --mirror "https://ghp_${{ secrets.GH_PAT }}@github.com/StarryCode-Lang/$repo.git"
+            cd "$repo"
+            git remote add gitee "git@gitee.com:fan-ruibo/$repo.git" || git remote set-url gitee "git@gitee.com:fan-ruibo/$repo.git"
+            git push --mirror gitee
+            cd ..
+          done < repos.txt
