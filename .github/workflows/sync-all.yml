@@ -13,14 +13,23 @@ jobs:
       - name: Checkout this repo (for repos.txt)
         uses: actions/checkout@v3
 
-      - name: Setup SSH for Gitee
+      - name: Setup SSH for Gitee (debug)
         run: |
           mkdir -p ~/.ssh
           echo "${{ secrets.GITEE_PRIVATE_KEY_BASE64 }}" | base64 -d > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
+      
+          echo "=== Private key head ==="
           head -n 3 ~/.ssh/id_rsa
+          echo "=== Private key tail ==="
           tail -n 3 ~/.ssh/id_rsa
+      
           ssh-keyscan gitee.com >> ~/.ssh/known_hosts
+          echo "=== Known hosts content ==="
+          cat ~/.ssh/known_hosts
+      
+          ssh -T git@gitee.com || true  # 允许失败，不影响后续步骤
+
 
 
       - name: Sync repos from repos.txt
