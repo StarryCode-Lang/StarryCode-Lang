@@ -7,7 +7,6 @@ EmptyAstroLearningProject
 gem5-fs-handbook
 JavaLearning
 JLUiOSClub_Web
-latent-diffusion
 microprocessor-trend-data
 MyBlogs
 open-webui
