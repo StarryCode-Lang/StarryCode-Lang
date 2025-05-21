@@ -37,51 +37,30 @@ jobs:
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
-         while read -r repo; do
+          while read -r repo; do
             echo "🔄 Syncing $repo ..."
-          
-            # ✅ 自动创建 Gitee 仓库（如果不存在）
-            echo "🔍 Checking if Gitee repo exists..."
-            repo_check_url="https://gitee.com/api/v5/repos/fan-ruibo/${repo}?access_token=${GITEE_TOKEN}"
-            repo_create_url="https://gitee.com/api/v5/user/repos"
-          
-            if ! curl -s "${repo_check_url}" | grep -q "\"name\":"; then
-              echo "🛠️ Gitee repo does not exist. Creating..."
-              curl -s -X POST "${repo_create_url}" \
-                -H "Content-Type: application/json" \
-                -d "{
-                  \"access_token\": \"${GITEE_TOKEN}\",
-                  \"name\": \"${repo}\",
-                  \"private\": false,
-                  \"auto_init\": false
-                }" > /dev/null
-          
-              echo "✅ Gitee repo '${repo}' created"
-              sleep 3  # 等待创建完成
-            else
-              echo "✅ Gitee repo '${repo}' already exists"
-            fi
-          
+
             rm -rf "$repo.git"
-          
+
             # 克隆裸仓库，使用 PAT 认证
             git clone --bare "https://ghp_${GH_PAT}@github.com/StarryCode-Lang/${repo}.git" "$repo.git"
             if [ ! -d "$repo.git" ]; then
               echo "❌ Clone failed for $repo"
               continue
             fi
-          
+
             cd "$repo.git"
-          
+
             # 添加或更新 gitee 远程仓库（SSH）
             if git remote | grep -q '^gitee$'; then
               git remote set-url gitee "git@gitee.com:fan-ruibo/${repo}.git"
             else
               git remote add gitee "git@gitee.com:fan-ruibo/${repo}.git"
             fi
-          
+
             # 推送镜像
             git push --mirror gitee || echo "⚠️ Push to Gitee failed for $repo"
-          
+
             cd ..
+
           done < repos.txt
