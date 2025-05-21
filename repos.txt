@@ -9,7 +9,6 @@ JavaLearning
 JLUiOSClub_Web
 microprocessor-trend-data
 MyBlogs
-open-webui
 pythonParallel-Coding-Tutorials
 StarryCode-Lang
 Swift-PriorityQueueSemo_zh
