@@ -30,9 +30,9 @@ Here are some ideas to get you started:
 
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-64%20hrs%2051%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-64%20hrs%2056%20mins-blue)
 
-![Profile Views](http://img.shields.io/badge/Profile%20Views-237-blue)
+![Profile Views](http://img.shields.io/badge/Profile%20Views-19-blue)
 
 **🐱 My GitHub Data** 
 
@@ -71,16 +71,21 @@ Sunday                   6 commits           █░░░░░░░░░░�
 🕑︎ Time Zone: Asia/Shanghai
 
 💬 Programming Languages: 
-No Activity Tracked This Week
+C++                      3 mins              █████████████████░░░░░░░░   68.82 % 
+Markdown                 1 min               ██████░░░░░░░░░░░░░░░░░░░   23.17 % 
+Other                    0 secs              ██░░░░░░░░░░░░░░░░░░░░░░░   07.35 % 
+CMake                    0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.66 % 
 
 🔥 Editors: 
-No Activity Tracked This Week
+VS Code                  4 mins              █████████████████████████   100.00 % 
 
 🐱‍💻 Projects: 
-No Activity Tracked This Week
+llvm-project             2 mins              ████████████████░░░░░░░░░   62.95 % 
+gem5                     1 min               ██████░░░░░░░░░░░░░░░░░░░   23.17 % 
+MyFirstLLVM              0 secs              ███░░░░░░░░░░░░░░░░░░░░░░   13.88 % 
 
 💻 Operating System: 
-No Activity Tracked This Week
+Linux                    4 mins              █████████████████████████   100.00 % 
 ```
 
 **I Mostly Code in HTML** 
@@ -96,5 +101,5 @@ Java                     1 repo              ██░░░░░░░░░�
 
 
 
- Last Updated on 01/06/2025 18:46:42 UTC
+ Last Updated on 05/06/2025 18:59:35 UTC
 <!--END_SECTION:waka-->
