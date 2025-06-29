@@ -38,6 +38,8 @@ Here are some ideas to get you started:
 
 > 📦 262.9 kB Used in GitHub's Storage 
  > 
+> 🏆 147 Contributions in the Year 2025
+ > 
 > 🚫 Not Opted to Hire
  > 
 > 📜 19 Public Repositories 
@@ -71,17 +73,16 @@ Sunday                   6 commits           █░░░░░░░░░░�
 🕑︎ Time Zone: Asia/Shanghai
 
 💬 Programming Languages: 
-HTML                     6 mins              █████████████████████████   99.88 % 
-Other                    0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.12 % 
+No Activity Tracked This Week
 
 🔥 Editors: 
-VS Code                  6 mins              █████████████████████████   100.00 % 
+No Activity Tracked This Week
 
 🐱‍💻 Projects: 
-N06                      6 mins              █████████████████████████   100.00 % 
+No Activity Tracked This Week
 
 💻 Operating System: 
-Windows                  6 mins              █████████████████████████   100.00 % 
+No Activity Tracked This Week
 ```
 
 **I Mostly Code in HTML** 
@@ -97,5 +98,5 @@ Java                     1 repo              ██░░░░░░░░░�
 
 
 
- Last Updated on 28/06/2025 18:48:24 UTC
+ Last Updated on 29/06/2025 18:47:47 UTC
 <!--END_SECTION:waka-->
