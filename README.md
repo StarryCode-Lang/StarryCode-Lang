@@ -19,15 +19,6 @@ Here are some ideas to get you started:
 <!--GitHub 统计卡片-->
 [![StarryCode-Lang's GitHub stats](https://github-readme-stats.vercel.app/api?username=StarryCode-Lang&hide=stars,contribs&show_icons=true&theme=buefy)](https://github.com/anuraghazra/github-readme-stats)
 
-<!--奖杯-->
-[![trophy](https://github-profile-trophy.vercel.app/?username=StarryCode-Lang&row=1&margin-w=10&theme=flat)](https://github.com/ryo-ma/github-profile-trophy)
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/StarryCode-Lang/StarryCode-Lang/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/StarryCode-Lang/StarryCode-Lang/output/github-contribution-grid-snake.svg">
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/StarryCode-Lang/StarryCode-Lang/output/github-contribution-grid-snake.svg">
-</picture>
-
 
 <!--START_SECTION:waka-->
 ![Code Time](http://img.shields.io/badge/Code%20Time-67%20hrs%2045%20mins-blue)
