@@ -17,7 +17,7 @@ Here are some ideas to get you started:
 -->
 
 <!--GitHub 统计卡片-->
-[![StarryCode-Lang's GitHub stats](https://github-readme-stats.vercel.app/api?username=StarryCode-Lang&hide=stars,contribs&show_icons=true&theme=buefy)](https://github.com/anuraghazra/github-readme-stats)
+[![StarryCode-Lang's GitHub stats](https://github-readme-stats.vercel.app/api?username=StarryCode-Lang&hide=stars,contribs&show_icons=true&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
 
 
 <!--START_SECTION:waka-->
