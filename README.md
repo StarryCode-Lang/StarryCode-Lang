@@ -55,25 +55,6 @@ Saturday                 3 commits           ░░░░░░░░░░░�
 Sunday                   6 commits           █░░░░░░░░░░░░░░░░░░░░░░░░   03.92 % 
 ```
 
-
-📊 **This Week I Spent My Time On** 
-
-```text
-🕑︎ Time Zone: Asia/Shanghai
-
-💬 Programming Languages: 
-No Activity Tracked This Week
-
-🔥 Editors: 
-No Activity Tracked This Week
-
-🐱‍💻 Projects: 
-No Activity Tracked This Week
-
-💻 Operating System: 
-No Activity Tracked This Week
-```
-
 **I Mostly Code in HTML** 
 
 ```text
@@ -84,8 +65,4 @@ C++                      1 repo              ██░░░░░░░░░�
 Java                     1 repo              ██░░░░░░░░░░░░░░░░░░░░░░░   07.69 % 
 ```
 
-
-
-
- Last Updated on 06/07/2025 18:47:55 UTC
 <!--END_SECTION:waka-->
