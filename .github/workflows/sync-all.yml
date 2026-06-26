@@ -2,7 +2,7 @@ name: Sync GitHub repos to Gitee
 
 on:
   schedule:
-    - cron: '0 */6 * * *'  # 每6小时自动执行一次，你可以根据需要调整
+    - cron: '0 0 * * 0'  # 每6小时自动执行一次，你可以根据需要调整
   workflow_dispatch:       # 允许手动触发
 
 jobs:
